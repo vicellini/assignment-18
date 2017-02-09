@@ -1,9 +1,14 @@
 import * as UTILS from './utils.js';
 import $ from 'jquery';
+// console.log(window.location.hash)
+if(window.location.hash === ''){
+	window.location.hash = "home"
+}
 
 
 var navContainerEl = document.querySelector('.navbar__user');
 var pageInfoEl = document.querySelector('.page-information')
+
 
 function controllerRouter(){
 	var currentRoute = window.location.hash.slice(1);
@@ -186,7 +191,6 @@ function controllerRouter(){
 											</table>
 										</div>
 										`
-
 }
 
 

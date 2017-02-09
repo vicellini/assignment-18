@@ -3,3 +3,10 @@ export var forEach = function(arr, func){
        func(arr[i], i, arr)
    }
  }
+
+export var isDefined = function(someStr){
+  if(someStr === ''){
+    someStr = "N/A"
+  }
+  return someStr
+}

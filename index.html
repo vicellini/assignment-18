@@ -9,18 +9,14 @@
 	<div id="app-container">
 		<div class="page-head">
 			<h1 class="page-head__title">FACTS about Iceland</h1>
-			<nav class="navbar navbar-default navbar-fixed-top">
-			  <div class="container">
-					<div class="row">
-						<a class="navbar-brand col-xs-3" href="#">HOME</a>
-						<a class="navbar-brand col-xs-3" href="#">Concerts</a>
-						<a class="navbar-brand col-xs-3" href="#">Carpools</a>
-						<a class="navbar-brand col-xs-3" href="#">Flights</a>
-			  	</div>
-				</div>
+			<nav class="navbar__user">
+						<a class="navbar-page active" data-route="home" href="#">HOME</a>
+						<a class="navbar-page" data-route="concerts" href="#">Concerts</a>
+						<a class="navbar-page" data-route="carpools" href="#">Carpools</a>
+						<a class="navbar-page" data-route="flights" href="#">Flights</a>
 			</nav>
 		</div>
-		<div class="page-information">
+		<div class="page-information container">
 			<table class="table">
 				<h3 class="table_header">The Basic Facts</h3>
 				<tr>
@@ -40,7 +36,6 @@
 					<td>352</td>
 				</tr>
 			</table>
-
 		</div>
 	</div>
 <script type="text/javascript" src="./dist/js/app.js"></script>

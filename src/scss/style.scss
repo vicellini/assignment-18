@@ -4,13 +4,24 @@
 
 body{
 	font-family: Helvetica, Arial, sans-serif;
-	// background-image: url('./')
+	background-image: url(../../images/Light_Blue_Flag_of_Iceland.svg.jpg);
+	background-size: cover;
+}
+
+#app-container {
+
+	width: 100vw;
+	height: 100vh;
+}
+
+u_column-contaner {
+	font-size: 0;
 }
 
 .page-head__title{
 	width: 100%;
 	height: 80px;
-	position: fixed;
+	position: relative;
 	top: 0; left: 0;
 	margin: 0 auto;
 	background: #333333;
@@ -22,9 +33,25 @@ body{
 	letter-spacing: 1px;
 }
 
-.navbar-fixed-top {
-	top: 80px;
+.navbar__user {
+	font-size: 0;
 	text-align: center;
+	background: #E7E7E7;
+}
+
+.navbar-page{
+	display: inline-block;
+	font-size: medium;
+	vertical-align: top;
+	padding: 12px;
+	width: 25%;
+	border: 1px solid #CCCCCC;
+}
+
+.navbar-page:hover {
+	background: #CECECE;
+	text-decoration: none;
+	outline: 0;
 }
 
 .container {
@@ -43,12 +70,14 @@ body{
 }
 
 .page-information {
-	padding-top: 160px;
-	width: 80%;
+	padding-top: 40px;
+	padding-bottom: 25px;
+	width: 90%;
 	margin: 0 auto;
 	border-left: 2px solid #000;
 	border-right: 2px solid #000;
-
+	background: #F8F8FB;
+	text-align: left;
 }
 
 .table {
@@ -58,8 +87,88 @@ body{
 
 .table_header {
 	background: rgb(242,222,222);
-	font-size: 25px;
+	font-size: 32px;
+	font-weight: 100;
 	width: 95%;
 	margin: 0 auto;
-	padding: 5px auto;
+	margin-bottom: 10px;
+	padding: 5px auto 15px;
+}
+
+.concert__thumbnail {
+	border-radius: 0;
+}
+
+.concert-elements {
+	padding: 10px 10px;
+}
+.thumbnail img {
+	width: 98%;
+}
+
+.caption h3 {
+	font-size: 21px;
+	font-weight: 100;
+}
+
+.venue-name {
+	font-size: 12px;
+}
+
+.event-time {
+	text-align: right;
+	font-size: 8px;
+	padding-top: 5px;
+}
+
+.navbar-page:hover {
+	background: #CECECE;
+	text-decoration: none;
+	outline: 0;
+}
+
+.active {
+	color: #fff;
+	background: #008CBA;
+	text-decoration: none;
+	outline: 0;
+}
+
+////////////////Flights///////
+
+.flight-information {
+	width: 100%;
+	margin: 0 auto;
+	font-size: 0;
+}
+
+.flight_table {
+	display: inline-block;
+	vertical-align: top;
+	font-size: medium;
+	text-align: left;
+	width: 50%;
+	font-size: 13px;
+	padding: 5px;
+}
+
+.table-label th {
+	width: 25%;
+	border-bottom: 1px solid grey;
+	border-spacing: 2px;
+}
+
+.table-data td{
+	width: 25%;
+	border-bottom: 1px solid grey;
+	border-spacing: 2px;
+	padding: 5px;
+}
+
+.column-header {
+	display: inline-block;
+	background: #D9EDF7;
+	width: 48%;
+	margin-left: 10px;
+	font-size: 26px;
 }
